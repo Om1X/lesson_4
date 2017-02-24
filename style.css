@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background: #eee;
+  font-family: "Roboto", sans-serif;
+}
+.head {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #555;
+  margin: 30px auto;
+}
+.tabsWrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.tabs {
+  display: flex;
+  width: 600px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B5E6FF;
+}
+.tabs > div:first-child {
+  border-top-left-radius: 10px;
+}
+.tabs > div:last-child {
+  border-top-right-radius: 10px;
+}
+.tabs > div {
+  box-sizing: border-box;
+  width: 148px;
+  height: 25px;
+  background: #74A6BF;
+}
+.tabs > div:hover,
+.tabs > div:focus {
+  box-sizing: border-box;
+  background: #B5E6FF;
+  cursor: pointer;
+  border: 2px solid #74A6BF;
+  line-height: 21px;
+  border-bottom: 0;
+  color: #273740;
+}
+.tabs > .active {
+  box-sizing: border-box;
+  width: 150px;
+  height: 25px;
+  background: #B5E6FF;
+  cursor: pointer;
+  border: 2px solid #74A6BF;
+  line-height: 21px;
+  border-bottom: 0;
+  color: #273740;
+}
+.innerTabs {
+  margin-top: -2px;
+  background: #B5E6FF;
+  border: 2px solid #74A6BF;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  color: #273740;
+}
+.innerTabs > div {
+  display: none;
+}
+.innerTabs > .active {
+  display: block;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+}
